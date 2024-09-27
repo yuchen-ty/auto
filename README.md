@@ -35,3 +35,5 @@ For llama2
     bash run-llama2.sh
 ```
 
+## Output
+The process is expected to generate checkpoints and inference results, both of which will be stored in the ./output directory upon completion. We need the ./output folder to be returned.
