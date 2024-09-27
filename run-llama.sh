@@ -18,7 +18,7 @@ model_name='llama-7b'
 seed=0
 ns=5200
 
-torchrun --nproc_per_node=2 --master_port=${port} main.py \
+torchrun --nproc_per_node=8 --master_port=${port} main.py \
         --model_name_or_path "huggyllama/llama-7b" \
         --data_path ${data_path} \
         --p_data_path ${p_data_path} --p_seed ${seed} \
