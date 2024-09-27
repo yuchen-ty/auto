@@ -1,3 +1,7 @@
+
+```
+git clone https://github.com/yuchen-ty/auto.git
+```
 ## environment
 ```
 conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=11.8 -c pytorch -c nvidia
