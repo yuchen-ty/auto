@@ -41,7 +41,7 @@ torchrun --nproc_per_node=8 --master_port=${port} main.py \
         --fsdp 'full_shard auto_wrap' \
         --report_to none \
         --tf32 True; \
-torchrun --nproc_per_node=2 --master_port=${port} main.py \
+torchrun --nproc_per_node=8 --master_port=${port} main.py \
         --eval_only \
         --model_max_length 2048 \
         --model_name_or_path ${output_dir}/${model_name/./-}-${p_type}-${p_target}-ns${ns}-seed${seed} \
